@@ -48,7 +48,7 @@ console.log(fullName()) // John Smith
  */
 
 function defUpperStr(text) {
-    return (text||'Default text').toUpperCase()
+    return (text||'Default text').toUpperCase();
 }
 
 
@@ -79,7 +79,7 @@ function evenFn(n) {
             result.push(i);
         }
     }
-    return result
+    return result;
 }
 
 
@@ -107,29 +107,14 @@ console.log(evenFn(20)) // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 function weekFn(day) {
     switch (day) {
-        case 1:
-            return 'Понеділок';
-            break;
-        case 2:
-            return 'Вівторок'
-            break;
-        case 3:
-            return 'Середа'
-            break;
-        case 4:
-            return 'Четверг'
-            break;
-        case 5:
-            return 'П\'ятниця'
-            break;
-        case 6:
-            return 'Субота'
-            break;
-        case 7:
-            return 'Неділя'
-            break
-        default:
-            return null
+        case 1 : return 'Понеділок';
+        case 2 : return 'Вівторок';
+        case 3 : return 'Середа';
+        case 4 : return 'Четверг';
+        case 5 : return 'П\'ятниця';
+        case 6 : return 'Субота';
+        case 7 : return 'Неділя';
+        default : return null;
     }
 }
 
@@ -164,7 +149,7 @@ function ageClassification(age) {
             age > 44 && age <= 65 ? "Зрілість" :
                 age > 65 && age <= 75 ? "Старість" :
                     age > 75 && age <= 90 ? "Довголіття" :
-                        age > 90 && age <= 122 ? "Рекорд" : null
+                        age > 90 && age <= 122 ? "Рекорд" : null;
 }
 
 console.log('    -1 :', ageClassification(-1)) // -1 : null
@@ -229,7 +214,7 @@ function oddFn(odd){
         if (i % 2 !== 0) {
             result.push(i);
         }
-        i++
+        i++;
     }
     return result;
 }

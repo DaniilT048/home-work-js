@@ -222,9 +222,20 @@ console.log('   150 :', ageClassification(150)) // 150 : null
  * oddFn(20) → [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
  */
 
-// console.log(oddFn(10)) // [1, 3, 5, 7, 9]
-// console.log(oddFn(15)) // [1, 3, 5, 7, 9, 11, 13, 15]
-// console.log(oddFn(20)) // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+function oddFn(odd){
+    const result = [];
+    for (let i = 1; i < odd; i++) {
+        if (i % 2 !== 0) {
+            result.push(i);
+        }
+    }
+    return result;
+}
+
+
+console.log(oddFn(10)) // [1, 3, 5, 7, 9]
+console.log(oddFn(15)) // [1, 3, 5, 7, 9, 11, 13, 15]
+console.log(oddFn(20)) // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 
 /*
  * #8

@@ -29,12 +29,12 @@ console.log(userObj)
  * userObj.lastName  ← 'Smith'
  * userObj.fullName() → 'John Smith'.
  */
-    function fullName () {
-        return `${userObj.firstName} ${userObj.lastName}`;
+userObj.fullName = function  () {
+        return `${this.firstName} ${this.lastName}`;
 }
 
 
-console.log(fullName()) // John Smith
+console.log(userObj.fullName()) // John Smith
 
 /*
  * #3

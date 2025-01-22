@@ -105,12 +105,42 @@ console.log(evenFn(20)) // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
  * У реалізації функції обов'язково мають бути використані оператори switch / case / default.
  */
 
-// console.log(weekFn(1))   // 'Понеділок'
-// console.log(weekFn(3))   // 'Середа'
-// console.log(weekFn(7))   // 'Неділя'
-// console.log(weekFn(9))   // null
-// console.log(weekFn(1.5)) // null
-// console.log(weekFn('2')) // null
+function weekFn(day) {
+    switch (day) {
+        case 1:
+            return 'Понеділок';
+            break;
+        case 2:
+            return 'Вівторок'
+            break;
+        case 3:
+            return 'Середа'
+            break;
+        case 4:
+            return 'Четверг'
+            break;
+        case 5:
+            return 'П\'ятниця'
+            break;
+        case 6:
+            return 'Субота'
+            break;
+        case 7:
+            return 'Неділя'
+            break
+        default:
+            return null
+
+    }
+}
+
+
+console.log(weekFn(1))   // 'Понеділок'
+console.log(weekFn(3))   // 'Середа'
+console.log(weekFn(7))   // 'Неділя'
+console.log(weekFn(9))   // null
+console.log(weekFn(1.5)) // null
+console.log(weekFn('2')) // null
 
 /*
  * #6

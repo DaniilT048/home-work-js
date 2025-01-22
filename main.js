@@ -224,10 +224,12 @@ console.log('   150 :', ageClassification(150)) // 150 : null
 
 function oddFn(odd){
     const result = [];
-    for (let i = 1; i < odd; i++) {
+    let i = 1;
+    while (i <= odd) {
         if (i % 2 !== 0) {
             result.push(i);
         }
+        i++
     }
     return result;
 }

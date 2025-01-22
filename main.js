@@ -144,12 +144,16 @@ console.log(weekFn('2')) // null
  */
 
 function ageClassification(age) {
-    return age > 0 && age <= 24 ? 'Дитинство' :
-        age > 24 && age <= 44 ? "Молодість" :
-            age > 44 && age <= 65 ? "Зрілість" :
-                age > 65 && age <= 75 ? "Старість" :
-                    age > 75 && age <= 90 ? "Довголіття" :
-                        age > 90 && age <= 122 ? "Рекорд" : null;
+   switch (true) {
+       case age <=0: return null;
+       case age <= 24: return 'Дитинство';
+       case age > 24 && age <= 44: return 'Молодість';
+       case age > 44 && age <= 65: return 'Зрілість';
+       case age > 65 && age <= 75: return 'Старість';
+       case age > 75 && age <= 90: return 'Довголіття';
+       case age > 90 && age <= 122: return 'Рекорд';
+       case age > 122 : return null;
+   }
 }
 
 console.log('    -1 :', ageClassification(-1)) // -1 : null
